@@ -30,12 +30,6 @@ else
   . $PRORC
 fi
 
-## DEFINE LOG LEVEL -----------------------------
-export INFO=1
-export WARNING=2
-export ERROR=3
-export APP_GLOBAL_LOGLEVEL=$ERROR
-
 ##===============================================
 ## CLI SHORTHANDS
 ##===============================================
