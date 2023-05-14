@@ -1,4 +1,4 @@
-# Bash-Template
-Template for simple Bash Script Projects
+# Bash-Skeleton
+Skeleton for simple Bash Script Projects
 
-### TODO: Documentation of the Bash-Template !!!
+### TODO: Documentation of the Bash Skeleton Project !!!

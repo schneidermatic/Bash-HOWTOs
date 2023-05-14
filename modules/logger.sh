@@ -1,16 +1,13 @@
 
 #==============================================================================
 # SCRIPT:        logger.sh
-# AUTOHR:        Markus Schneider
-# CONTRIBUTERS:  Markus Schneider,<YOU>
-# DATE:          2023-05-14
-# REV:           0.1.0
-# PLATFORM:      Noarch
-# PURPOSE:       Bash Module Usage
+# AUTOHR:        <Firstname, Lastname>
+# DATE:          20XX-XX-XX
+# PURPOSE:       Bash Module for logging
 #==============================================================================
 
 ##-----------------------------------------------
-## SUBROUTINES
+## SUBROUTINE(s)
 ##-----------------------------------------------
 ## 1:INFO, 2:WARNING, 3:ERROR
 logger() {
@@ -35,6 +32,6 @@ logger() {
 
   if [ $APP_LOCAL_LOGLEVEL -lt $APP_GLOBAL_LOGLEVEL ]
   then
-    printf "[%s]:[%s]: %s\n" $TIMESTAMP $LOGLEVEL "$MESSAGE"
+    printf "%s:%s:%s\n" $TIMESTAMP $LOGLEVEL "$MESSAGE"
   fi
 }

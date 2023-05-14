@@ -1,16 +1,13 @@
 
 #==============================================================================
 # SCRIPT:        usage.sh
-# AUTOHR:        Markus Schneider
-# CONTRIBUTERS:  Markus Schneider,<YOU>
-# DATE:          2023-05-14
-# REV:           0.1.0
-# PLATFORM:      Noarch
-# PURPOSE:       Bash Module Usage
+# AUTOHR:        <Firstname, Lastname>
+# DATE:          20XX-XX-XX
+# PURPOSE:       Bash Module for usage
 #==============================================================================
 
 ##-----------------------------------------------
-## SUBROUTINES
+## SUBROUTINE(s)
 ##-----------------------------------------------
 usage() {
   cat<<EOF

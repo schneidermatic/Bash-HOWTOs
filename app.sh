@@ -2,26 +2,26 @@
 
 #==============================================================================
 # SCRIPT:        app.sh
-# AUTOHR:        Markus Schneider
-# CONTRIBUTERS:  Markus Schneider,<YOU>
-# DATE:          2023-05-14
-# REV:           0.1.0
-# PLATFORM:      Noarch
-# PURPOSE:       Main Script Stub
+# AUTOHR:        <Firstname, Lastname>
+# DATE:          20XX-XX-XX
+# PURPOSE:       Main App Script 
 #==============================================================================
 
 ##-----------------------------------------------
 ## CONFIG
 ##-----------------------------------------------
 opts=c:h
-. $PROJECT_HOME/.prorc
+. $PROJECT_HOME/.confrc
 
 ##-----------------------------------------------
-## SUBROUTINES
+## MODULE(s)
 ##-----------------------------------------------
 . $PROJECT_MODULES/usage.sh
 . $PROJECT_MODULES/logger.sh
 
+##-----------------------------------------------
+## SUBROUTINE(s)
+##-----------------------------------------------
 run() {
   logger $INFO "The following command was choosen => $COMMAND"
 }

@@ -1,11 +1,8 @@
 
 #==============================================================================
 # SCRIPT:        .xrc
-# AUTOHR:        Markus Schneider
-# CONTRIBUTERS:  Markus Schneider,<YOU>
-# DATE:          2023-05-14
-# REV:           0.1.0
-# PLATFORM:      Noarch
+# AUTOHR:        <Firstname, Lastname>
+# DATE:          20XX-XX-XX
 # PURPOSE:       Project specific environment file.
 #==============================================================================
 
@@ -13,21 +10,21 @@
 ## CONFIG
 ##===============================================
 CWD=`pwd`
-PRORC=$HOME/.prorc
+CONFRC=$HOME/.confrc
 
 ## SOURCE PROJECT ENV ---------------------------
-if [ -e $PRORC ]
+if [ -e $CONFRC ]
 then
-  . $PRORC
+  . $CONFRC
 else
-  cp $CWD/.prorc $PRORC
+  cp $CWD/.confrc $CONFRC
 fi
 
 if [ -z "$PROJECT_HOME" ]
 then
-  echo "Please set \$PROJECT_HOME in '$PRORC' file !!!"
+  echo "Please set \$PROJECT_HOME in '$CONFRC' file !!!"
 else
-  . $PRORC
+  . $CONFRC
 fi
 
 ##===============================================

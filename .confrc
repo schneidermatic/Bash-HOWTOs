@@ -1,12 +1,9 @@
 
 #==============================================================================
-# SCRIPT:        .prorc
-# AUTOHR:        Markus Schneider
-# CONTRIBUTERS:  Markus Schneider,<YOU>
-# DATE:          2023-05-14
-# REV:           0.1.0
-# PLATFORM:      Noarch
-# PURPOSE:       Project specific environment var file for the $HOME dir.
+# SCRIPT:        .confrc
+# AUTOHR:        <Firstname, Lastname>
+# DATE:          20XX-XX-XX
+# PURPOSE:       Configuration file for the $HOME dir.
 #==============================================================================
 
 ##-----------------------------------------------
