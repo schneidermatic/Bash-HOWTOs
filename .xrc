@@ -10,21 +10,21 @@
 ## CONFIG
 ##===============================================
 CWD=`pwd`
-CONFRC=$HOME/.confrc
+export APPRC_FILE=".apprc"
+export APPRC_PATH=$HOME/$APPRC_FILE
 
 ## SOURCE PROJECT ENV ---------------------------
-if [ -e $CONFRC ]
+if [ -e $APPRC_PATH ]
 then
-  . $CONFRC
+  . $APPRC_PATH
 else
-  cp $CWD/.confrc $CONFRC
+  cp $CWD/$APPRC_FILE $HOME
 fi
 
 if [ -z "$PROJECT_HOME" ]
 then
-  echo "Please set \$PROJECT_HOME in '$CONFRC' file !!!"
-else
-  . $CONFRC
+  echo "Please set \$PROJECT_HOME in '$APPRC_PATH' file !!!"
+  echo "... and source the '.xrc' file again."
 fi
 
 ##===============================================
@@ -36,11 +36,11 @@ x_run() {
 
 #################################################
 #################################################
-#####       ---  LIST SHORTHANDS  ---       #####
+#####        ---  LIST FUNCTIONS ---        #####
 #################################################
 #################################################
 x_ls() {
-  echo "SHORTHANDS"
-  echo "=========="
+  echo "FUNCTIONS"
+  echo "========="
   declare -F | grep "x_" | sed -E 's/declare -f //'
 }

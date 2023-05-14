@@ -10,11 +10,16 @@
 ##-----------------------------------------------
 ## CONFIG
 ##-----------------------------------------------
-opts=c:h
-. $PROJECT_HOME/.confrc
+if [ -z "$APPRC_PATH" ]
+then
+  echo "Please source the '.xrc' file !!!"
+  exit 1
+fi
+
+. $APPRC_PATH
 
 ##-----------------------------------------------
-## MODULE(s)
+## SOURCE MODULE(s)
 ##-----------------------------------------------
 . $PROJECT_MODULES/usage.sh
 . $PROJECT_MODULES/logger.sh

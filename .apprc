@@ -1,16 +1,18 @@
 
 #==============================================================================
-# SCRIPT:        .confrc
+# SCRIPT:        .apprc
 # AUTOHR:        <Firstname, Lastname>
 # DATE:          20XX-XX-XX
-# PURPOSE:       Configuration file for the $HOME dir.
+# PURPOSE:       App Configuration file for the $HOME dir.
 #==============================================================================
 
 ##-----------------------------------------------
 ## CONFIG
 ##-----------------------------------------------
+
+## COMMON ---------------------------------------
 export PROJECT_HOME=""
-export PROJECT_MODULES_HOME="$PROJETC_HOME/modules"
+export PROJECT_MODULES="$PROJECT_HOME/modules"
 
 ## DEFINE LOG LEVEL -----------------------------
 export INFO=1
