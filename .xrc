@@ -9,6 +9,7 @@
 ##===============================================
 ## CONFIG
 ##===============================================
+set -o vi
 CWD=`pwd`
 export APPRC_FILE=".apprc"
 export APPRC_PATH=$HOME/$APPRC_FILE

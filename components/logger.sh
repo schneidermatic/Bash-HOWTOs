@@ -32,6 +32,6 @@ logger() {
 
   if [ $APP_LOCAL_LOGLEVEL -lt $APP_GLOBAL_LOGLEVEL ]
   then
-    printf "%s:%s:%s\n" $TIMESTAMP $LOGLEVEL "$MESSAGE"
+    printf "%s;%s;%s\n" $TIMESTAMP $LOGLEVEL "$MESSAGE"
   fi
 }

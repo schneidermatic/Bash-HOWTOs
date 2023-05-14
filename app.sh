@@ -28,7 +28,7 @@ fi
 ## SUBROUTINE(s)
 ##-----------------------------------------------
 run() {
-  logger $INFO "The following command was choosen => $COMMAND"
+  logger $LOG_INFO "The following command was choosen => $COMMAND"
 }
 
 ##-----------------------------------------------
