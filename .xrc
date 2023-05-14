@@ -1,0 +1,55 @@
+
+#==============================================================================
+# SCRIPT:        .xrc
+# AUTOHR:        Markus Schneider
+# CONTRIBUTERS:  Markus Schneider,<YOU>
+# DATE:          2023-05-14
+# REV:           0.1.0
+# PLATFORM:      Noarch
+# PURPOSE:       Project specific environment file.
+#==============================================================================
+
+##===============================================
+## CONFIG
+##===============================================
+CWD=`pwd`
+PRORC=$HOME/.prorc
+
+## SOURCE PROJECT ENV ---------------------------
+if [ -e $PRORC ]
+then
+  . $PRORC
+else
+  cp $CWD/.prorc $PRORC
+fi
+
+if [ -z "$PROJECT_HOME" ]
+then
+  echo "Please set \$PROJECT_HOME in '$PRORC' file !!!"
+else
+  . $PRORC
+fi
+
+## DEFINE LOG LEVEL -----------------------------
+export INFO=1
+export WARNING=2
+export ERROR=3
+export APP_GLOBAL_LOGLEVEL=$ERROR
+
+##===============================================
+## CLI SHORTHANDS
+##===============================================
+x_run() {
+  $PROJECT_HOME/app.sh "$@"
+}
+
+#################################################
+#################################################
+#####       ---  LIST SHORTHANDS  ---       #####
+#################################################
+#################################################
+x_ls() {
+  echo "SHORTHANDS"
+  echo "=========="
+  declare -F | grep "x_" | sed -E 's/declare -f //'
+}

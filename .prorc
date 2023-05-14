@@ -1,0 +1,22 @@
+
+#==============================================================================
+# SCRIPT:        .prorc
+# AUTOHR:        Markus Schneider
+# CONTRIBUTERS:  Markus Schneider,<YOU>
+# DATE:          2023-05-14
+# REV:           0.1.0
+# PLATFORM:      Noarch
+# PURPOSE:       Project specific environment var file for the $HOME dir.
+#==============================================================================
+
+##-----------------------------------------------
+## CONFIG
+##-----------------------------------------------
+export PROJECT_HOME=""
+export PROJECT_MODULES_HOME="$PROJETC_HOME/modules"
+
+## DEFINE LOG LEVEL -----------------------------
+export INFO=1
+export WARNING=2
+export ERROR=3
+export APP_GLOBAL_LOGLEVEL=$ERROR
