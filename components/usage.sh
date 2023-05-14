@@ -1,9 +1,9 @@
 
 #==============================================================================
-# SCRIPT:        usage.sh
+# FILE:          usage.sh
 # AUTOHR:        <Firstname, Lastname>
 # DATE:          20XX-XX-XX
-# PURPOSE:       Bash Module for usage
+# PURPOSE:       Bash Script Component for usage
 #==============================================================================
 
 ##-----------------------------------------------

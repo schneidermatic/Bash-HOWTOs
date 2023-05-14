@@ -1,9 +1,9 @@
 
 #==============================================================================
-# SCRIPT:        logger.sh
+# FILE:          logger.sh
 # AUTOHR:        <Firstname, Lastname>
 # DATE:          20XX-XX-XX
-# PURPOSE:       Bash Module for logging
+# PURPOSE:       Bash Script Component for logging
 #==============================================================================
 
 ##-----------------------------------------------

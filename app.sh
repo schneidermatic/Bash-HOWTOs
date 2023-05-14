@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #==============================================================================
-# SCRIPT:        app.sh
+# FILE:          app.sh
 # AUTOHR:        <Firstname, Lastname>
 # DATE:          20XX-XX-XX
 # PURPOSE:       Main App Script 
@@ -19,10 +19,10 @@ fi
 . $APPRC_PATH
 
 ##-----------------------------------------------
-## SOURCE MODULE(s)
+## SOURCE COMPONENTS(s)
 ##-----------------------------------------------
-. $PROJECT_MODULES/usage.sh
-. $PROJECT_MODULES/logger.sh
+. $PROJECT_COMPONENTS/usage.sh
+. $PROJECT_COMPONENTS/logger.sh
 
 ##-----------------------------------------------
 ## SUBROUTINE(s)

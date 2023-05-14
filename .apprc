@@ -12,7 +12,7 @@
 
 ## COMMON ---------------------------------------
 export PROJECT_HOME=""
-export PROJECT_MODULES="$PROJECT_HOME/modules"
+export PROJECT_COMPONENTS="$PROJECT_HOME/components"
 
 ## DEFINE LOG LEVEL -----------------------------
 export INFO=1
