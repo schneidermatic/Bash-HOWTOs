@@ -21,22 +21,22 @@ fi
 ##-----------------------------------------------
 ## SOURCE COMPONENTS(s)
 ##-----------------------------------------------
-. $PROJECT_COMPONENTS/usage.sh
-. $PROJECT_COMPONENTS/logger.sh
+. $APP_COMPONENTS/usage.sh
+. $APP_COMPONENTS/logger.sh
 
 ##-----------------------------------------------
 ## SUBROUTINE(s)
 ##-----------------------------------------------
 run() {
-  logger $LOG_INFO "The following command was choosen => $COMMAND"
+  logger $LOG_INFO "The following command was choosen => $APP_COMMAND"
 }
 
 ##-----------------------------------------------
 ## MAIN
 ##-----------------------------------------------
 main() {
-   procOpt "$@"
-   run
+  procOpt "$@"
+  run
 }
 
 main "$@"

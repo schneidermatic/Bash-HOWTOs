@@ -7,15 +7,21 @@
 #==============================================================================
 
 ##-----------------------------------------------
+## SOURCE COMPONENTS(s)
+##-----------------------------------------------
+. $APP_COMPONENTS/legend.sh
+
+##-----------------------------------------------
 ## SUBROUTINE(s)
 ##-----------------------------------------------
-opts=c:h
+opts=c:hs
 
 usage() {
   cat<<EOF
   usage: ${0##*/} [-v -h -x option1 -y option2 ...]
         -c command, arg(s): 'create' | 'run' | 'update' | 'delete' 
         -h help
+        -s silent
 EOF
   exit 0;
 }
@@ -24,7 +30,8 @@ procOpt() {
   while getopts $opts opt
     do
     case $opt in
-      c) COMMAND=$OPTARG;;
+      c) APP_COMMAND=$OPTARG;;
+      s) APP_SILENT="true";;
       h) usage;;
       \?) echo -e "Invalid option: -$OPTARG\n" >&2; usage; exit 1;;
       :) echo -e "Missing argument for -$OPTARG\n" >&2; usage; exit 1;;
@@ -32,7 +39,12 @@ procOpt() {
     esac
   done
 
-  if [ -z "$COMMAND" ]
+  if [ "$APP_SILENT" == "false" ]
+  then
+    show_legend
+  fi
+  
+  if [ -z "$APP_COMMAND" ]
   then
     usage
     exit 1

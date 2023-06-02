@@ -13,6 +13,7 @@ set -o vi
 CWD=`pwd`
 export APPRC_FILE=".apprc"
 export APPRC_PATH=$HOME/$APPRC_FILE
+export APP_SILENT="false"
 
 ## SOURCE PROJECT ENV ---------------------------
 if [ -e $APPRC_PATH ]
@@ -22,17 +23,17 @@ else
   cp $CWD/$APPRC_FILE $HOME
 fi
 
-if [ -z "$PROJECT_HOME" ]
+if [ -z "$APP_HOME" ]
 then
-  echo "Please set \$PROJECT_HOME in '$APPRC_PATH' file !!!"
-  echo "... and source the '.xrc' file again."
+  echo "Please set \$APP_HOME in '$APPRC_PATH' file !!!"
+  echo "... and source the '.apprc' file again."
 fi
 
 ##===============================================
 ## CLI SHORTHAND FUNCTIONS
 ##===============================================
 x_run() {
-  $PROJECT_HOME/app.sh "$@"
+  $APP_HOME/app.sh "$@"
 }
 
 #################################################

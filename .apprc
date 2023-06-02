@@ -11,11 +11,11 @@
 ##-----------------------------------------------
 
 ## COMMON ---------------------------------------
-export PROJECT_HOME=""
-export PROJECT_COMPONENTS="$PROJECT_HOME/components"
+export APP_HOME=""
+export APP_COMPONENTS="$APP_HOME/components"
 
 ## DEFINE LOG LEVEL -----------------------------
 export LOG_INFO=1
 export LOG_WARNING=2
 export LOG_ERROR=3
-export APP_GLOBAL_LOGLEVEL=$ERROR
+export APP_GLOBAL_LOGLEVEL=$LOG_ERROR
