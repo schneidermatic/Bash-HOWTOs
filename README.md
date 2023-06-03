@@ -1,4 +1,4 @@
-# Bash-Skeleton
-Skeleton for simple Bash Script Projects
+# Bash-Cookbook
+A Collection of Bash Recipes
 
-### TODO: Documentation of the Bash Skeleton Project !!!
+### TODO: Documentation of the Bash-Cookbook Content
