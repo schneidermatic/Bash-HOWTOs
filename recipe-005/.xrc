@@ -11,8 +11,9 @@
 ##===============================================
 set -o vi
 CWD=`pwd`
-export APPRC_FILE=".apprc"
+export APPRC_FILE=".xshrc"
 export APPRC_PATH=$HOME/$APPRC_FILE
+export APP_MODULES="$APP_HOME/recipe-005/modules"
 export APP_SILENT="false"
 
 ## SOURCE PROJECT ENV ---------------------------
@@ -26,14 +27,14 @@ fi
 if [ -z "$APP_HOME" ]
 then
   echo "Please set \$APP_HOME in '$APPRC_PATH' file !!!"
-  echo "... and source the '.apprc' file again."
+  echo "... and source the '$APPRC_FILE' file again."
 fi
 
 ##===============================================
 ## CLI SHORTHAND FUNCTIONS
 ##===============================================
 x_run() {
-  $APP_HOME/app.sh "$@"
+  $APP_HOME/recipe-005/app.sh "$@"
 }
 
 #################################################

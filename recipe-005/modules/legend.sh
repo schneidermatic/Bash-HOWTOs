@@ -17,10 +17,14 @@ APP_LEGEND+=$'/ /_/ /  __/ / / / / / /_/ / /_/ / /_/ / /_/ /\n'
 APP_LEGEND+=$'\__,_/\___/_/ /_/ /_/\____/\__,_/ .___/ .___/ \n'
 APP_LEGEND+=$'                               /_/   /_/      '
 export APP_LEGEND
+TIMESTAMP=$(date --utc +%FT%T.%3NZ)
 
+##-----------------------------------------------
+## SUBROUTINE(s)
+##-----------------------------------------------
 show_legend() {
   echo "$APP_LEGEND"
   echo "----------"
-  echo "v$(git describe --tags `git rev-list --tags --max-count=1`)"
+  echo "v$(git describe --tags `git rev-list --tags --max-count=1`) - $TIMESTAMP"
   echo ""
 }

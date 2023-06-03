@@ -12,7 +12,6 @@
 
 ## COMMON ---------------------------------------
 export APP_HOME=""
-export APP_COMPONENTS="$APP_HOME/components"
 
 ## DEFINE LOG LEVEL -----------------------------
 export LOG_INFO=1

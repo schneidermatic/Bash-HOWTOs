@@ -21,8 +21,8 @@ fi
 ##-----------------------------------------------
 ## SOURCE COMPONENTS(s)
 ##-----------------------------------------------
-. $APP_COMPONENTS/usage.sh
-. $APP_COMPONENTS/logger.sh
+. $APP_MODULES/usage.sh
+. $APP_MODULES/logger.sh
 
 ##-----------------------------------------------
 ## SUBROUTINE(s)
